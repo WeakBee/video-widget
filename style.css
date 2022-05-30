@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.outer-widget{
+    position: fixed;
+    z-index: 999;
+    width: 20vh;
+    height: 20vh;
+    left: 4vh;
+    bottom: 4vh;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.outer-widget:hover{
+    transform: scale(1.05);
+}
+.widget-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 66, 182);
+    border-radius: 50%;
+    border: 1vh solid rgb(12, 66, 182);
+    overflow: hidden;
+}
+.examplevid {
+    width: 200%;
+    transform: translate(-1vh,-1vh);
+}
+.close-widget{
+    z-index: 100;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    position: absolute ;
+    width: 4vh ;
+    height: 4vh ;
+    border-radius: 50% ;
+    top: -1vh ;
+    right: -1vh ;
+    color: #353535 ;
+    cursor: pointer ;
+    background: #2f3137 ;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+    transition: 0.7s;
+    transform-origin: center ;
+}
+.close-widget:hover{
+    transform: rotate(180deg);
+}
+.hubungi-kami{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.3vh;
+    z-index: 2;
+}
+.widget-output{
+    display: none;
+    left: 5vh;
+    bottom: 5vh;
+    width: 40vh ;
+    height: 70vh ;
+    position: fixed ;
+    box-sizing: border-box ;
+    box-shadow: 0px 0px 60px rgb(0 0 0 / 15%) ;
+    z-index: 2147483649 ;
+    border-radius: 10px ;
+    transition: 0.3s ;
+}
+.video-frame{
+    position: static ;
+    overflow: hidden ;
+}
+.load-video{
+    position: absolute ;
+    bottom: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    background-color: white ;
+    border: none ;
+    box-sizing: border-box ;
+    border-radius: 10px ;
+    overflow: hidden ;
+    margin: 0 ;
+    padding: 0 ;
+}
